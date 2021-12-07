@@ -4,14 +4,14 @@
 -iris_call_ms:Clonar el repositorio iris_call_ms
 -iris_call_db: crear una subcarpeta llamada iris_call_db y Crear un archivo Dockefile de la siguiente manera:
 	
-FROM mysql:5.7
+	FROM mysql:5.7
 
-ENV MYSQL_ROOT_PASSWORD=abcd
-ENV MYSQL_DATABASE=iris_call_db
-ENV MYSQL_USER=call
-ENV MYSQL_PASSWORD=abcd
+	ENV MYSQL_ROOT_PASSWORD=abcd
+	ENV MYSQL_DATABASE=iris_call_db
+	ENV MYSQL_USER=call
+	ENV MYSQL_PASSWORD=abcd
 
-EXPOSE 3307
+	EXPOSE 3307
 
 ## Crear el Jar de la app
 -mvn clean package -DskipTests
@@ -42,4 +42,4 @@ EXPOSE 3307
 -docker ps
 
 ## Correar la app
--docker logs -f "conatiner id de call_ms"
+-docker logs -f "conatiner id de iris_call_ms"
