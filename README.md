@@ -41,7 +41,7 @@ En una sola carpeta crear las sub carpetas:
 
 ## Crear el container del ms y unir la base de datos con el container del ms
 
-## docker run -p 8080:8080  --name call_ms --network user-mysql  -d call_ms
+-docker run -p 8080:8080  --name call_ms --network user-mysql  -d call_ms
 
 ## Para saber el id del container de call_ms
 
