@@ -42,4 +42,4 @@
 -docker ps
 
 ## Correar la app
--docker logs -f "conatiner id de call_ms"
+-docker logs -f "conatiner id de iris_call_ms"
