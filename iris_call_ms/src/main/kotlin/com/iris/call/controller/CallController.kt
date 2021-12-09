@@ -23,6 +23,11 @@ class CallController {
         return callRepository.findAll();
     }
 
+    @GetMapping("/getcallsUser/{userId}")
+    fun getcallsUser(@PathVariable userId : String): List<Call>{
+        return callRepository.findByUserId(userId);
+    }
+
 
     @DeleteMapping("/delete/{id}")
     fun deleteCall(@PathVariable id: Int) :String{

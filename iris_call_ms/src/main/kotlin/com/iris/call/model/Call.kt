@@ -12,6 +12,7 @@ data class Call (
     @GeneratedValue
     val call_id:Int,
 
+    val userId: String,
     val call_date: String,
     val call_started: String,
     val call_finished: String,

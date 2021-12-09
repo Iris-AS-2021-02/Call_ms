@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface CallRepository: JpaRepository<Call, Int> {
-
+    fun findByUserId(userId :String):List<Call>
 }
